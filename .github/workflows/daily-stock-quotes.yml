@@ -1,10 +1,10 @@
 # Daily US stock quotes → phone (SMS or WhatsApp). Runs in the cloud; no laptop needed.
-# Schedule: 8:00 AM EST = 13:00 UTC. For 8:00 AM EDT use: 0 12 * * *
+# Schedule: 7:15 AM IST = 01:45 UTC
 name: Daily Stock Quotes
 
 on:
   schedule:
-    - cron: '5 13 * * *'
+    - cron: '45 1 * * *'
   workflow_dispatch:
 
 jobs:

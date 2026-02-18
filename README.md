@@ -34,16 +34,17 @@ Sends a short daily message with US stock quotes (e.g. NVDA, LIFE, TEAM, GOOGL) 
 
 ## Schedule and timezone
 
-- The workflow runs on **UTC**. Default cron: `5 13 * * *` (about 8:00 AM **EST**).
+- The workflow runs on **UTC**. Current schedule: **7:15 AM IST** (`45 1 * * *`).
 - To change the time, edit [`.github/workflows/daily-stock-quotes.yml`](.github/workflows/daily-stock-quotes.yml) and set the `schedule` cron:
 
 | Local time (approx.) | Cron (UTC) |
 |----------------------|------------|
+| 7:15 AM IST          | `45 1 * * *` |
 | 8:00 AM EST          | `5 13 * * *` |
 | 8:00 AM EDT          | `5 12 * * *` |
 | 9:00 AM EST          | `5 14 * * *` |
 
-Use [crontab.guru](https://crontab.guru/) to convert your desired local time to UTC. Note: US daylight saving changes EST/EDT; adjust the cron twice a year if you want exact local time.
+Use [crontab.guru](https://crontab.guru/) to convert your desired local time to UTC. Note: IST is fixed (no DST); US times need adjustment twice a year for daylight saving.
 
 ## Add or remove stocks
 
