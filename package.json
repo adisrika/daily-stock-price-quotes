@@ -1,0 +1,19 @@
+{
+  "name": "daily-stock-price-quotes",
+  "version": "1.0.0",
+  "description": "Send daily US stock quotes to your phone via SMS or WhatsApp",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "send-stocks": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["stocks", "quotes", "twilio", "sms", "whatsapp"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "twilio": "^5.0.0"
+  }
+}
